@@ -1,2 +1,2 @@
 # ToDo-App
-ToDo App with React.js &amp; Django
+ToDo App with Vue.js &amp; Django
