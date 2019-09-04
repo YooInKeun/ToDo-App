@@ -1,4 +1,7 @@
 from django.shortcuts import render
+from django.views.generic import CreateView, ListView
 
-def home(request):
-    return render(request, 'index.html')
+from todo.models import Todo
+
+class TodoMOMCV(ListView, CreateView):
+    template_name = 'todo/todo_form_list.html'
