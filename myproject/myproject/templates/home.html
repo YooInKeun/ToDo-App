@@ -2,54 +2,29 @@
 
 {% load staticfiles %}
 
-{% block title %}home.html{% endblock %}
+{% block title %}인근's ToDo App{% endblock %}
 
 {% block extra-style %}
 <style type="text/css">
-
-.home-window {
-    background-image: url("{% static 'img/lion.jpg' %}");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-    height: 500px;
-    border-top: 10px solid #ccc;
-    border-bottom: 10px solid #ccc;
-    color: yellow;
-    padding: 20px 0 0 20px;
-}
-.title {
-    color: #c80;
-    font-weight: bold;
-}
-.powered {
-    position: relative;
-    top: 77%;
-    color: #cc0;
-    font-style: italic;
-}
-
-.footer-wrapper {
-    background: #456;
-    color: #eee;
-    line-height: 50px;
-}
-.footer-wrapper a {
-    color: #ff9;    /* footer-right text */
-}
-.footer-wrapper a:hover {
-    color: #0ff;
-}
-footer ul li {
-    text-align: center;
-}
-
+    footer ul li {
+        text-align: center;
+    }
 </style>
 {% endblock extra-style %}
 
 {% block content %}
     <div class="home-window">
         <h2 class="title">Django - Python Web Programming</h2>
+        <br>
+        <br>
+
+        <h4>'Vue.js-Django 웹 프로그래밍 강의'를 들으며
+        <br>공부용 목적으로 잠시 배포한 것으로
+        <br>모든 저작권은 김석훈씨에게 있음을 밝힙니다.
+        </h4>
+        <br>
+
+        <h4>*추가 기능 : 로그인 기능 및 css, js 파일 분리</h4>
         <h4 class="powered"><i class="fas fa-cog"></i> powered by django and bootstrap.</h4>
     </div>
 
