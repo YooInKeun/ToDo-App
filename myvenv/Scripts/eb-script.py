@@ -1,0 +1,12 @@
+#!"c:\users\keun0\onedrive\바탕 화면\창업 경진대회\todo\todo-app\myvenv\scripts\python.exe"
+# EASY-INSTALL-ENTRY-SCRIPT: 'awsebcli==3.15.3','console_scripts','eb'
+__requires__ = 'awsebcli==3.15.3'
+import re
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    sys.exit(
+        load_entry_point('awsebcli==3.15.3', 'console_scripts', 'eb')()
+    )
